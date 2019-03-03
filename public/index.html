@@ -1,0 +1,41 @@
+<!--
+A web app that lively plots data from Firebase Realtime Database nodes, thanks to plotly.js
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Cloud IoT Core Web App</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- We use "simpler project configuration" described here:
+    https://firebase.google.com/docs/web/setup?authuser=0#host_your_web_app_using_firebase_hosting
+    It is possible as we will host our app using Firebase Hosting. -->
+    <script defer src="/__/firebase/5.8.3/firebase-app.js"></script>
+    <!-- We include only the Firebase features we need -->
+    <script defer src="/__/firebase/5.8.3/firebase-database.js"></script>
+    <!-- Initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    <!-- Include Plotly.js -->
+    <script defer src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- Include the moment.js library -->
+    <script defer src="https://momentjs.com/downloads/moment.js"></script>
+     <!-- Include the script describing the plotting work to do -->
+	<script defer src="script.js"></script>   
+</head>
+
+<body>
+    <!-- Plotly chart will be drawn inside this div. -->
+    <div id="temperaturePlot" style="width: 100vw; max-height:45vh"></div>
+    <div id="humidityPlot" style="width: 100vw; max-height:45vh"></div>
+
+    <p style="text-align: center; margin: 0">
+        <b>GCP Cloud IoT Core, ESP32 & Mongoose OS rock! </b>See
+        <a target="_blank" href="https://medium.com/@o.lourme/gcp-cloudiotcore-esp32-mongooseos-1st-5c88d8134ac7">Medium</a>
+        and <a target="_blank" href="https://github.com/olivierlourme/iot-store-display">Github</a>.
+    </p>
+</body>
+
+</html>

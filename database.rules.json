@@ -1,0 +1,12 @@
+{
+  "rules": {
+    "devices-ids": {
+      ".read": true,
+      ".write": false
+    },
+    "devices-telemetry": {
+      ".read": true,
+      ".write": false
+    }
+  }
+}
