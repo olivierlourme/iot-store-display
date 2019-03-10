@@ -4,7 +4,7 @@
 // See https://firebase.google.com/docs/web/setup?authuser=0#host_your_web_app_using_firebase_hosting
 
 // Number of last records to display:
-const nbOfElts = 1500;
+const nbOfElts = 750;
 
 // Declaration of an array of devices ids
 let devicesIds = [];

@@ -16,4 +16,4 @@ All data messages are then forwarded to a **Cloud Pub/Sub** topic of the project
 **Cloud IoT Core architecture**, **devices firmware & provision** and **Cloud Function & web app setups** are all extensively described in [this Medium post](https://medium.com/@o.lourme/gcp-cloudiotcore-esp32-mongooseos-1st-5c88d8134ac7).
 
 ## Live demo
-A live demo corresponding to the web app presented in this repository is avalaible [here](https://hello-cloud-iot-core.firebaseapp.com/). There are two devices, one "indoor" and one "outdoor". Each one makes a measure every minute. The last 1500 measures are plotted for each device, corresponding to approximately 24 hours.
+A live demo corresponding to the web app presented in this repository is avalaible [here](https://hello-cloud-iot-core.firebaseapp.com/). There are two devices, one "indoor" and one "outdoor". Each one makes a measure every two minutes. The last 750 measures are plotted for each device, corresponding to approximately 24 hours.
